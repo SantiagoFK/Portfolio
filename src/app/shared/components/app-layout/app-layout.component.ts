@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'pf-app-layout',
@@ -7,11 +7,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './app-layout.component.html',
   styleUrl: './app-layout.component.scss'
 })
-export class AppLayoutComponent implements OnInit
+export class AppLayoutComponent
 {
-  ngOnInit(): void {
-    console.log(window.screen.width);
-    console.log(window.screen.height);
-  }
 
 }

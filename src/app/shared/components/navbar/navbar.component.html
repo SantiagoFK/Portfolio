@@ -1,11 +1,7 @@
 <nav>
-    @if (this.mobileMode) 
+    @if (this.responsiveService.width! < 1200) 
     {
-        <pf-nav-mobile>
-            <!--
-            <pf-paragraph>Porfolio</pf-paragraph>
-            <pf-icon icon="burger"></pf-icon>-->
-        </pf-nav-mobile>
+        <pf-nav-mobile></pf-nav-mobile>
     }
     @else
     {
