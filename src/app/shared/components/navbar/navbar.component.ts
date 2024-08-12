@@ -5,7 +5,6 @@ import { MobileComponent } from './mobile/mobile.component';
 import { DesktopComponent } from './desktop/desktop.component';
 import { IconComponent } from '../icon/icon.component';
 import { ResponsiveService } from '../../services/responsive.service';
-import { Subscription } from 'rxjs';
 
 
 @Component({
