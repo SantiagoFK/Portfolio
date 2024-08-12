@@ -9,16 +9,22 @@ export class ResponsiveService
   currentHeigth?: number = visualViewport?.height
   currentWidth?: number = visualViewport?.width
 
-  constructor() { }
+  resize$: Observable<Event> = fromEvent(window.visualViewport!, 'resize');
+  load$: Observable<Event> = fromEvent(window, 'load')
 
-  window$: Observable<Event> = fromEvent(window.visualViewport!, 'resize');
-
-  observer: Subscription = this.window$.subscribe({
+  resizeObserver: Subscription = this.resize$.subscribe({
     next: () => {
       this.currentHeigth = visualViewport?.height
       this.currentWidth = visualViewport?.width
     }
   }) 
+
+  loadObserver: Subscription = this.load$.subscribe({
+    next: () => {
+      this.currentHeigth = visualViewport?.height
+      this.currentWidth = visualViewport?.width
+    }
+  })
   
   get heigth(): number | undefined
   {
