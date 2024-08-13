@@ -27,7 +27,5 @@ export class NavbarComponent implements OnInit
         this.heigth = this.responsiveService.heigth
       }
     })
-  }
-
-  
+  } 
 }

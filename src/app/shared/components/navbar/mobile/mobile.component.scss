@@ -43,12 +43,18 @@ $white: v.$pf-white;
             top: 3%;
             right: 6%;
             font-size: 1.8rem;
-            color: white;
+            color: $white;
+        }
+
+        pf-link{
+            display: flex;
+            margin: 5%;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 1.3rem;
+            color: $white;
+            transition: 0.3s;
+            text-shadow: 2px 1px 8px $white;        
         }
     }
-
-}
-
-.expanded{
-    width: 250px;
 }

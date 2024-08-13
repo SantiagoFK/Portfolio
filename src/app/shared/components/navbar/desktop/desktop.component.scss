@@ -1,0 +1,59 @@
+.desktop-nav{
+    width: 100%;
+    top: 0;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 0.5%;
+    padding-bottom: 0;
+    text-shadow: 2px 1px 8px white;
+
+    &--brand{
+        color: snow;
+        display: flex;
+        height: fit-content;
+        padding: 2%;
+        width: fit-content;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+}
+
+pf-link{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: snow;
+    width: 10%;
+    padding: 1%;
+    margin: 1%;
+    transition: transform 0.1s ease-in-out 0s;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.1);
+}
+
+pf-link:hover{
+    transform: scale(1.1,1.1);
+    position: relative;
+    bottom: 2px;
+    border-bottom: 3px solid greenyellow;
+}
+
+.nav-link{
+    transition: transform 0.1s ease-in-out 0s;
+    color: snow;
+    margin: 10px;
+    font-size: 1.8rem;
+}
+
+.nav-link:hover{
+    position: relative;
+    bottom: 2px;
+    color: greenyellow;
+    transform: scale(1.1,1.1);
+}
+
+.nav-link-container{
+    padding: 1%;
+    margin-top: 10px;
+    margin-left: 15%;
+    width: 40%;
+}
