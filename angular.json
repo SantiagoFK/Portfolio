@@ -29,7 +29,10 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              },
+              "src/favicon.ico",
+              "src/assets",
+              "src/static"
             ],
             "styles": [
               "src/styles.scss"
@@ -94,7 +97,10 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              },
+              "src/favicon.ico",
+              "src/assets",
+              "src/static"
             ],
             "styles": [
               "src/styles.scss"
