@@ -11,19 +11,418 @@
 
 body{
     font-family: "main-font";
-    background-color: aqua;
+    color: snow;
 }
 
 main{
-    min-height: 500px;
+    min-height: fit-content;
 
 }
 
 video {
-    
     width: 100vw;
-    height: 100vh;
+    height: 350vh;
     z-index: -1;
     position: fixed;
     object-fit: cover;
   }
+
+  a{
+    color: snow;
+}
+
+.nav-page
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: snow;
+    width: 20%;
+    
+    margin: 1%;
+    transition: transform 0.1s ease-in-out 0s;
+}
+
+.nav-page:hover{
+    transform: scale(1.1,1.1);
+    position: relative;
+    bottom: 2px;
+    border-bottom: 3px solid greenyellow;
+}
+
+/*
+.sub-banner{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.7);
+    border-bottom: 1px solid snow;
+}
+
+
+.sub-banner-img{ 
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+
+.sub-banner-txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    order: 1;
+}
+
+.sub-banner-txt > h3{
+    text-shadow: 2px 1px 8px white;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sub-banner-txt > p{
+    display: none;
+}
+
+.sub-banner-btn{
+    order: 3;
+    font-size: 1.5rem;
+    min-height: 50px;
+    cursor: pointer;
+    color: white;
+    border: 3px solid deeppink;
+    background-color: deeppink;
+    margin-top: 50px;
+    width: 70%;
+    height: 50px;
+}
+
+.sub-banner-btn > button{
+    cursor: pointer;
+    color: white;
+    border: 3px solid deeppink;
+    background-color: deeppink;
+    margin-top: 3%;
+    width: 100%;
+    height: 50px;
+    transition: transform 0.1s ease-in-out 0s;
+}
+
+.sub-banner-btn > button:hover{
+    transform: scale(1.1,1.1);
+    position: relative;
+    bottom: 2px;
+}
+
+.sub-banner{
+
+    outline: 1px solid white;
+    padding: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.sub-banner-img{
+    max-width: 100%;
+}
+
+.sub-banner-txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    width: 50%;
+}
+
+.sub-banner-txt > p{
+    display: block;
+
+}
+
+.sub-banner-txt > h3{
+    text-shadow: 2px 1px 8px white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sub-banner-btn{
+    cursor: pointer;
+    color: white;
+    border: 3px solid deeppink;
+    background-color: deeppink;
+    margin-top: 50px;
+    width: 70%;
+    height: 50px;
+    transition: transform 0.1s ease-in-out 0s;
+}
+
+.sub-banner-btn:hover{
+    transform: scale(1.1,1.1);
+    position: relative;
+    bottom: 2px;
+}*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: snow;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: snow;
+}
+
+/************************landing page banner****************/
+
+.sub-banner{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.7);
+    border-bottom: 1px solid snow;
+}
+
+
+.sub-banner-img{ 
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+
+.sub-banner-txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    order: 1;
+}
+
+.sub-banner-txt > h3{
+    text-shadow: 2px 1px 8px white;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sub-banner-txt > p{
+    display: none;
+}
+
+.sub-banner-btn{
+    order: 3;
+    font-size: 1.5rem;
+    min-height: 50px;
+    cursor: pointer;
+    color: white;
+    border: 3px solid deeppink;
+    background-color: deeppink;
+    margin-top: 50px;
+    width: 70%;
+    height: 50px;
+}
+
+.sub-banner-btn > button{
+    cursor: pointer;
+    color: white;
+    border: 3px solid deeppink;
+    background-color: deeppink;
+    margin-top: 3%;
+    width: 100%;
+    height: 50px;
+    transition: transform 0.1s ease-in-out 0s;
+}
+
+.sub-banner-btn > button:hover{
+    transform: scale(1.1,1.1);
+    position: relative;
+    bottom: 2px;
+}
+
+.error{
+    margin: 0;
+    outline: 1px solid white;
+    color: red;
+}
+
+.input-container{
+    padding: 10px;
+    padding-bottom: 0;
+}
+
+.create-btn
+{
+    margin: 0% 3% 3% 0;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: white;
+    font-size: 4.5rem;
+    transition: transform 0.1s ease-in-out 0s;
+}
+
+.create-btn:hover{
+    cursor: pointer;
+    transform: scale(1.1,1.1);
+}
+
+@media (min-width: 350px)
+{
+    .action-btn-mobile{
+        font-size: 1.8rem;
+    }
+}
+
+
+@media (min-width: 576px) {  
+    .action-btn-mobile{
+        font-size: 2.7rem;
+    }
+}
+
+
+@media (min-width: 768px) { 
+    .form-container{
+        padding-top: 5%;
+    }
+ }
+
+
+@media (min-width: 992px) 
+{ 
+    .article-list > h3 {
+        margin-bottom: 1%;
+        text-align: center;
+        font-size: 3.2rem;
+    }
+
+    #article-section > h3{
+        font-size: 2.8rem;
+        text-align: center;
+        color: gold;
+        text-shadow: 2px 1px 8px gold;   
+    }
+    
+    body{
+        font-size: 1.6rem;
+    }
+
+    .ads-list{
+        display: flex;
+        width: 75%;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+}
+
+
+@media (min-width: 1200px) { 
+    .form-container{
+        padding-top: 8%;
+    }
+    body{
+        
+        
+        background-size: cover;
+        background-color: #12100e;
+    }
+
+    .desktop-nav{
+        display: flex;
+        width: 100%;
+    }
+
+    .mobile-nav{
+        display: none;
+    }
+
+    nav{
+        position: fixed;
+    }
+
+    .nav-brand{
+        padding: 1%;
+        font-size: 1.7rem;
+    }
+
+
+    .sub-banner{
+        
+        outline: 1px solid white;
+        padding: 4%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.8);
+    }
+    
+    .sub-banner-img{
+        max-width: 100%;
+    }
+    
+    .sub-banner-txt{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        width: 50%;
+    }
+
+    .sub-banner-txt > p{
+        display: block;
+
+    }
+    
+    .sub-banner-txt > h3{
+        text-shadow: 2px 1px 8px white;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .sub-banner-btn{
+        cursor: pointer;
+        color: white;
+        border: 3px solid deeppink;
+        background-color: deeppink;
+        margin-top: 50px;
+        width: 70%;
+        height: 50px;
+        transition: transform 0.1s ease-in-out 0s;
+    }
+    
+    .sub-banner-btn:hover{
+        transform: scale(1.1,1.1);
+        position: relative;
+        bottom: 2px;
+    }
+ }
+
+
+@media (min-width: 1400px) {  
+    
+}
