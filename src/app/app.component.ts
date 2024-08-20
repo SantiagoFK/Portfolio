@@ -9,8 +9,7 @@ import { TitleComponent } from './shared/components/title/title.component';
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, NavbarComponent, FooterComponent, AppLayoutComponent, TitleComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  templateUrl: './app.component.html'
 })
 export class AppComponent {
   title = 'Portfolio';

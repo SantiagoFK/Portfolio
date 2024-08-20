@@ -11,6 +11,7 @@
 
 body{
     font-family: "main-font";
+    background-color: #12100e;
     color: snow;
 }
 
@@ -19,13 +20,7 @@ main{
 
 }
 
-video {
-    width: 100vw;
-    height: 350vh;
-    z-index: -1;
-    position: fixed;
-    object-fit: cover;
-  }
+
 
   a{
     color: snow;
@@ -80,7 +75,7 @@ video {
     align-items: center;
     flex-direction: column;
     background: rgba(0, 0, 0, 0.7);
-    border-bottom: 1px solid snow;
+    border-bottom: 1px solid deeppink;
 }
 
 
@@ -168,6 +163,24 @@ video {
     transform: scale(1.1,1.1);
 }
 
+.page-container{
+    background: rgba(0, 0, 0, 1);
+    padding-top: 10%;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.page-container > h2{
+    text-align: center;
+    font-size: 2.7rem;
+    margin-bottom: 50px;
+    text-shadow: 2px 1px 8px white;
+    font-weight: 900;
+    letter-spacing: 10px;
+}
+
+/* MEDIA QUERIES */
+
 @media (min-width: 350px)
 {
     .action-btn-mobile{
@@ -224,9 +237,11 @@ video {
         padding-top: 8%;
     }
     body{
-        
-        
-        background-size: cover;
+        background-image: url("assets/img/5.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    
         background-color: #12100e;
     }
 
