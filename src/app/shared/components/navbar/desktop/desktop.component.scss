@@ -19,24 +19,6 @@
     }
 }
 
-pf-link{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    color: snow;
-    
-    transition: transform 0.1s ease-in-out 0s;
-    border-bottom: 3px solid rgba(0, 0, 0, 0.0);
-}
-
-pf-link:hover{
-    
-    transform: scale(1.1,1.1);
-    position: relative;
-    bottom: 2px;
-    color: greenyellow;
-    border-bottom: 3px solid greenyellow;
-}
 
 .nav-link{
     transition: transform 0.1s ease-in-out 0s;
@@ -51,5 +33,6 @@ pf-link:hover{
     color: greenyellow;
     transform: scale(1.1,1.1);
 }
+
 
 
