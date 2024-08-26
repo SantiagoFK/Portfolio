@@ -2,30 +2,30 @@ import { Routes } from '@angular/router';
 import { HomePageComponent } from './portfolio/pages/home-page/home-page.component';
 
 export const routes: Routes = [
-    { path: '', pathMatch: 'full', component: HomePageComponent },
+    { path: '', pathMatch: 'full', component: HomePageComponent, title: 'Portfolio | Home' },
     { 
         path: 'skills',   
         loadComponent: () => import('./portfolio/pages/skills-page/skills-page.component')
             .then(c => c.SkillsPageComponent ),  
-        title: 'Skills'
+        title: 'Portfolio | Skills'
     },
     { 
         path: 'education', 
         loadComponent: () => import('./portfolio/pages/education-page/education-page.component')
             .then(c => c.EducationPageComponent ),  
-        title: 'Education'
+        title: 'Portfolio | Education'
     },
     { 
         path: 'projects', 
         loadComponent: () => import('./portfolio/pages/projects-page/projects-page.component')
             .then(c => c.ProjectsPageComponent), 
-        title: 'Projects'
+        title: 'Porfolio | Projects'
     },
     { 
         path: 'about', 
         loadComponent: () => import('./portfolio/pages/about-page/about-page.component')
         .then(c => c.AboutPageComponent), 
-        title: 'About'
+        title: 'Portfolio | About'
     },
     {
         path: '**',

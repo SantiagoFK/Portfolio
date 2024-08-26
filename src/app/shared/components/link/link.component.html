@@ -1,1 +1,3 @@
-<a [routerLink]="_link" routerLinkActive="active" ><ng-content></ng-content></a>
+<div class="link-container">
+    <a [routerLink]="_link" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"><ng-content></ng-content></a>
+</div>

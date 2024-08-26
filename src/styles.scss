@@ -34,27 +34,6 @@ a{
 }
 
 
-.nav-page
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: snow;
-    width: 10%;    
-    margin: 1%;
-    transition: transform 0.1s ease-in-out 0s;
-    
-    
-}
-
-
-.nav-page:hover{
-    transform: scale(1.1,1.1);
-    position: relative;
-    bottom: 2px;
-    border-bottom: 3px solid greenyellow;
-}
 
 
 /* width */
@@ -175,7 +154,7 @@ a{
 }
 
 .page-container{
-    background: rgba(0, 0, 0, 1);
+    background: rgba(0, 0, 0, 0.7);
     padding-top: 10%;
     width: 100%;
     min-height: 100vh;
