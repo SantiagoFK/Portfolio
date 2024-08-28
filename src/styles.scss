@@ -240,12 +240,15 @@ a{
         width: 100%;
     }
 
+
     .nav-link-container{
         display: flex;
         flex-direction: row;
         justify-content: center;
         padding: 1%;
     }
+
+  
 
     .mobile-nav{
         display: none;
@@ -268,10 +271,14 @@ a{
         justify-content: center;
         align-items: center;
         background: rgba(0, 0, 0, 0.8);
+
     }
+
+
     
     .sub-banner-img{
         max-width: 100%;
+
     }
     
     .sub-banner-txt{
@@ -281,6 +288,11 @@ a{
         align-items: center;
         padding: 50px;
         width: 50%;
+        
+        border-left: 2px solid springgreen;
+        border-radius: 30px;
+
+        
     }
 
     .sub-banner-txt > p{
@@ -292,6 +304,8 @@ a{
         text-shadow: 2px 1px 8px white;
         text-align: center;
         margin-bottom: 20px;
+        color: white;
+        
     }
     
     .sub-banner-btn{
