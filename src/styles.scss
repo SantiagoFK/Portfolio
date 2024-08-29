@@ -56,6 +56,36 @@ a{
     background: snow;
 }
 
+.tech-container{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    order: 3;
+    gap: 15px;
+}
+
+.tech-container__tech{
+    width: 20%;
+}
+
+.tech-container{
+    overflow: hidden;
+    img {
+        width: 4%;
+        //transition: transform 0.1s ease-in-out 0s;
+    }
+
+    /*
+    img:hover{
+        //transform: scale(1.1,1.1);
+        width: 4.5%;
+        position: relative;
+        bottom: 2px;
+        
+    }*/
+    
+}
+
 /************************landing page banner****************/
 
 .sub-banner{
@@ -66,6 +96,7 @@ a{
     flex-direction: column;
     background: rgba(0, 0, 0, 0.7);
     border-bottom: 1px solid deeppink;
+    flex-wrap: wrap;
 }
 
 
@@ -154,8 +185,8 @@ a{
 }
 
 .page-container{
-    background: rgba(0, 0, 0, 0.7);
-    padding-top: 10%;
+    background: rgba(0, 0, 0, .9);
+    padding-top: 5%;
     width: 100%;
     min-height: 100vh;
 }
@@ -265,7 +296,7 @@ a{
 
 
     .sub-banner{
-        padding: 4%;
+        
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -277,8 +308,8 @@ a{
 
     
     .sub-banner-img{
+        
         max-width: 100%;
-
     }
     
     .sub-banner-txt{
@@ -286,7 +317,7 @@ a{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 50px;
+        padding: 20px;
         width: 50%;
         
         border-left: 2px solid springgreen;

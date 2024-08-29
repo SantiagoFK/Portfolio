@@ -1,3 +1,69 @@
-img{
-    width: 15%;
+.tech-container{
+    margin: 0  auto;
+    
+    display: flex;
+    justify-content: center;
+    
+}
+
+.tech-container__tech{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    p{
+
+        text-align: center;
+        
+        width: 100%;
+    }
+    img{
+        
+        width: 70%;
+    }
+}
+
+
+.know-list, .soft-list{
+    
+    padding: 1%;
+    margin: 0 1%;
+    
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    justify-content: center;
+    gap: 20px;
+}
+
+.know-list__item, .soft-list__item{
+    
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    
+    i{
+        margin-top: 3px;
+        color: green;
+        margin-right: 7px;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+}
+
+.soft-list__item{
+    i{
+        color: white;
+    }
+
+    p{
+        font-size: 1.7rem;
+    }
+}
+
+.flush-margin{
+    margin: 3%;
+    text-align: start;
 }
