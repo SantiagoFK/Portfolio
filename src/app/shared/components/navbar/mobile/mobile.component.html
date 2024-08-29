@@ -1,14 +1,13 @@
 <div class="mobile-nav">
-    <pf-paragraph class="mobile-nav--brand">Porfolio</pf-paragraph>
+    <pf-paragraph class="mobile-nav--brand">Santi B.</pf-paragraph>
     <pf-icon icon="burger" (clicked)="onClicked()" class="mobile-nav--burger"></pf-icon>
 
     <div class="mobile-nav__sidebar" [style.width]="this.sideBarOpen ? '60%' : '0px'">
         <pf-icon icon="cross" (clicked)="onClicked()" class="mobile-nav__sidebar--cross"></pf-icon>
-        <pf-link>Home</pf-link>
-        <pf-link>Frontend</pf-link>
-        <pf-link>Backend</pf-link>
-        <pf-link>Proyectos</pf-link>
-        <pf-link>Formación</pf-link>
-        <pf-link>Sobre Mi</pf-link>
+        <pf-link link="/">Home</pf-link>
+        <pf-link link="skills">Skills</pf-link>
+        <pf-link link="education">Formación</pf-link>
+        <pf-link link="projects">Proyectos</pf-link>
+        <pf-link link="about">Sobre Mi</pf-link>
     </div>
 </div>

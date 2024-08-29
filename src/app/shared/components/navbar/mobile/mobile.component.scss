@@ -8,7 +8,7 @@ $white: v.$pf-white;
     flex-direction: row;
     justify-content: space-between;
     color: $white;
-    background-color: $black;
+    background: rgba(0, 0, 0, 0.8);
 
     &--burger{
         width: fit-content;
@@ -33,7 +33,7 @@ $white: v.$pf-white;
         z-index: 1;
         top: 0;
         right: 0;
-        background-color: $black;
+        background: rgba(0, 0, 0, 0.9);
         overflow-x: hidden;
         padding-top: 60px;
         transition: 0.3s;
