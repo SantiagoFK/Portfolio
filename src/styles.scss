@@ -187,6 +187,7 @@ a{
 .page-container{
     background: rgba(0, 0, 0, .9);
     padding-top: 5%;
+    padding-bottom: 2%;
     width: 100%;
     min-height: 100vh;
 }
@@ -199,6 +200,24 @@ a{
     font-weight: 900;
     letter-spacing: 10px;
 }
+
+.flush-margin{
+    margin: 3%;
+    margin-bottom: 2%;
+    text-align: start;
+}
+
+.sub-banner-txt__p{
+    text-align: justify;
+}
+
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
 
 /* MEDIA QUERIES */
 
@@ -317,7 +336,7 @@ a{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 20px;
+        padding: 20px 40px;
         width: 50%;
         
         border-left: 2px solid springgreen;

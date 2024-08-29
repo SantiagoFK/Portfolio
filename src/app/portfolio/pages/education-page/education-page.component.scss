@@ -1,0 +1,60 @@
+.degree{
+    display: flex;
+    flex-direction: column;
+    margin: 2% 2%;
+    border-left: 2px solid springgreen;
+    border-right: 2px solid springgreen;
+    border-radius: 30px;
+    padding: 1% 3%;
+    gap: 5px;
+
+    &__title{
+        img{
+            width: 15%;
+        }
+
+        p{
+            font-size: 2.3rem;
+            font-weight: 600;
+        }
+    }
+
+    &__place, &__time{
+        display: flex;
+        flex-direction: row;
+        font-size: 1.3rem;
+        p{
+            margin-left: 5px;
+            
+        }
+    }
+
+    &__status{
+        font-size: 1.3rem;
+    }
+
+    &__detail{
+        padding: 1%;
+        p{
+            text-align: justify;
+        }
+    }
+
+    &__attachment{
+        display: flex;
+        flex-direction: row;
+        outline: 2px solid white;
+        padding: 10px;
+        border-radius: 30px;
+        width: fit-content;
+
+        p{
+            margin-left: 5px;
+        }
+    }
+}
+
+h2{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
