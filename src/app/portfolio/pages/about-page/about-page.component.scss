@@ -1,0 +1,39 @@
+h2{
+    margin-top: 1%;
+}
+
+.about{
+    
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin: 0 2%;
+    border-left: 2px solid springgreen;
+    border-right: 2px solid springgreen;
+    border-radius: 30px;
+    padding: 1% 1%;
+    gap: 2%;
+
+    &__introduction{
+        padding: 1%;
+        width: 65%;
+        p{
+            text-align: justify;
+        }
+    }
+
+    &__photo{
+        background-color: yellow;
+        display: flex;
+        
+        
+        width: 20%;
+        border-radius: 250px;
+        overflow: hidden;
+        
+        
+        img{
+            max-width: 100%;
+        }
+    }
+}
