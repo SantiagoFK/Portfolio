@@ -2,9 +2,6 @@
     display: flex;
     flex-direction: column;
     margin: 2% 2%;
-    border-left: 2px solid springgreen;
-    border-right: 2px solid springgreen;
-    border-radius: 30px;
     padding: 1% 3%;
     gap: 5px;
 
@@ -14,7 +11,7 @@
         }
 
         p{
-            font-size: 2.3rem;
+            font-size: 1rem;
             font-weight: 600;
         }
     }
@@ -22,7 +19,7 @@
     &__place, &__time{
         display: flex;
         flex-direction: row;
-        font-size: 1.3rem;
+        font-size: .8rem;
         p{
             margin-left: 5px;
             
@@ -30,12 +27,13 @@
     }
 
     &__status{
-        font-size: 1.3rem;
+        font-size: .8rem;
     }
 
     &__detail{
         padding: 1%;
         p{
+            
             text-align: justify;
         }
     }
@@ -44,12 +42,17 @@
         display: flex;
         flex-direction: row;
         outline: 2px solid white;
-        padding: 10px;
+        padding: 5px;
         border-radius: 30px;
         width: fit-content;
 
         p{
+            font-size: .7rem;
             margin-left: 5px;
+            
+        }
+        i{
+            font-size: .7rem;
         }
     }
 }
@@ -58,3 +61,72 @@ h2{
     margin-top: 1%;
     margin-bottom: 2%;
 }
+
+@media (min-width: 350px)
+{
+    
+    
+}
+
+@media(min-width: 463px)
+{
+    
+}
+
+
+@media (min-width: 576px) {
+
+    
+}
+
+
+@media (min-width: 768px) { 
+
+
+}
+
+
+@media (min-width: 992px) 
+{    
+
+    .degree{
+
+        border-left: 2px solid springgreen;
+        border-right: 2px solid springgreen;
+        border-radius: 30px;
+
+        &__title{
+            p{
+                font-size: 2.3rem;
+            }
+        }
+
+        &__place, &__time{
+            font-size: 1.3rem;
+        }
+
+        &__status{
+            font-size: 1.3rem;
+        }
+
+        &__attachment{
+            padding: 10px;
+    
+            p{
+
+                font-size: inherit;
+            }
+
+            i{
+                font-size: inherit;
+            }
+        }
+    }
+
+
+}
+
+
+@media (min-width: 1200px) { 
+   
+ }
