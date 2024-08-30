@@ -1,23 +1,26 @@
 h2{
     margin-top: 1%;
+
+    font-size: 1.2rem;
+    text-align: center;
 }
 
 .about{
     
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin: 0 2%;
-    border-left: 2px solid springgreen;
-    border-right: 2px solid springgreen;
-    border-radius: 30px;
+
     padding: 1% 1%;
     gap: 2%;
 
     &__introduction{
         padding: 1%;
-        width: 65%;
+        width: 95%;
         p{
+            font-size: .8rem;
             text-align: justify;
         }
     }
@@ -26,7 +29,7 @@ h2{
         background-color: yellow;
         display: flex;
         
-        
+        margin-bottom: 5px;
         width: 20%;
         border-radius: 250px;
         overflow: hidden;
@@ -37,3 +40,82 @@ h2{
         }
     }
 }
+
+
+@media (min-width: 350px)
+{
+    .about{
+        flex-direction: row;
+    }
+
+    h2{
+        
+        font-size: 1.4rem;
+        
+    }
+}
+
+    
+
+@media(min-width: 463px)
+{
+    .about{
+        &__introduction{
+        
+            p{
+                font-size: 1rem;
+            }
+        }
+    }
+    
+}
+
+
+@media (min-width: 576px) {
+
+    h2{
+        
+        font-size: 1.4rem;
+        
+    }
+}
+
+
+@media (min-width: 768px) { 
+
+    h2{
+        
+        font-size: 2rem;
+    }
+}
+
+
+@media (min-width: 992px) 
+{    
+    h2{
+        text-align: start;
+        font-size: 2.5rem;
+    }
+    .about{
+        flex-direction: row-reverse;
+        border-left: 2px solid springgreen;
+        border-right: 2px solid springgreen;
+        border-radius: 30px;
+        
+            &__introduction{
+            
+                p{
+                    font-size: inherit;
+                }
+            }
+        
+    
+    }
+    
+
+}
+
+
+@media (min-width: 1200px) { 
+   
+ }
