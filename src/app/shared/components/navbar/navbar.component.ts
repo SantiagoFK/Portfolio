@@ -1,4 +1,4 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, inject, OnDestroy, OnInit } from '@angular/core';
 import { ParagraphComponent } from "../paragraph/paragraph.component";
 import { LinkComponent } from '../link/link.component';
 import { MobileComponent } from './mobile/mobile.component';
