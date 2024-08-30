@@ -3,11 +3,12 @@ import { IconComponent } from '../../icon/icon.component';
 import { ParagraphComponent } from '../../paragraph/paragraph.component';
 import { LinkComponent } from '../../link/link.component';
 import { ResponsiveService } from '../../../services/responsive.service';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'pf-nav-mobile',
   standalone: true,
-  imports: [IconComponent, ParagraphComponent, LinkComponent],
+  imports: [IconComponent, ParagraphComponent, LinkComponent, NgClass],
   templateUrl: './mobile.component.html',
   styleUrl: './mobile.component.scss'
 })

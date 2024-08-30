@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './education-page.component.scss'
 })
 export class EducationPageComponent {
-
+  openDrive()
+  {
+    
+  }
 }

@@ -3,6 +3,12 @@
     <pf-icon icon="burger" (clicked)="onClicked()" class="mobile-nav--burger"></pf-icon>
 
     <div class="mobile-nav__sidebar" [style.width]="this.sideBarOpen ? '60%' : '0px'">
+        <div class="link-container">
+            <a href="" class="nav-link"><i class="bi bi-github"></i></a>
+            <a href="" class="nav-link"><i class="bi bi-linkedin"></i></a>
+            <a href="" class="nav-link"><i class="bi bi-envelope"></i></a>
+        </div>
+        
         <pf-icon icon="cross" (clicked)="onClicked()" class="mobile-nav__sidebar--cross"></pf-icon>
         <pf-link link="/">Home</pf-link>
         <pf-link link="skills">Skills</pf-link>
