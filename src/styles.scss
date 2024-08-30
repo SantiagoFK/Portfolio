@@ -14,13 +14,6 @@
     padding: 0;
     margin: 0;
 }
-/*
-body{
-    font-family: "main-font";
-    background-color: #12100e;
-    color: snow;
-    
-}*/
 
 body{
     background-image: url("assets/img/5.jpg");
@@ -28,25 +21,16 @@ body{
     background-position: center;
     background-attachment: fixed;
     font-family: "main-font";
-    
     color: snow;
-
-    background-color: #12100e;
 }
 
 main{
     min-height: fit-content;
-
 }
-
-
 
 a{
     color: snow;
 }
-
-
-
 
 /* width */
 ::-webkit-scrollbar {
@@ -68,34 +52,28 @@ a{
     background: snow;
 }
 
-
-
-/************************landing page banner****************/
-
-
-
 .error{
     margin: 0;
     outline: 1px solid white;
     color: red;
 }
 
-
 .page-container{
-    background: rgba(0, 0, 0, .9);
-    padding-top: 5%;
+    background: rgba(0, 0, 0, .8);
+    padding-top: 1%;
     padding-bottom: 2%;
     width: 100%;
     min-height: 100vh;
 }
 
 .page-container > h2{
-    text-align: center;
-    font-size: 2.7rem;
-    margin-bottom: 50px;
+    text-align: start;
+    //font-size: 2.7rem;
+    font-size: .8rem;
+    //margin-bottom: 50px;
     text-shadow: 2px 1px 8px white;
     font-weight: 900;
-    letter-spacing: 10px;
+    //letter-spacing: 10px;
 }
 
 .flush-margin{
@@ -103,8 +81,6 @@ a{
     margin-bottom: 2%;
     text-align: start;
 }
-
-
 
 .container{
     display: flex;
@@ -146,6 +122,10 @@ a{
     .form-container{
         padding-top: 8%;
     }*/
+
+    .page-container{
+        padding-top: 5%;
+    }
    
 
     .desktop-nav{

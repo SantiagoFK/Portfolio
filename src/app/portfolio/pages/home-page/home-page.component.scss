@@ -19,13 +19,11 @@
 }
 
 .sub-banner{
-    padding: 5px 20px 35px 20px;
-    
+    padding: 20px 20px 35px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    //background: rgba(0, 0, 0, 0.7);
     background: rgba(0, 0, 0, 0.8);
     border-bottom: 1px solid deeppink;
     flex-wrap: wrap;
@@ -71,19 +69,16 @@
 .sub-banner-btn, .sub-banner-btn-inner{
     order: 3;
     font-size: 0.9rem;
-    
     cursor: pointer;
     color: white;
     border: 3px solid deeppink;
     background-color: deeppink;
-
     width: fit-content;
     padding: 8px;
     min-width: 100px;
 }
 
 .sub-banner-txt{
-
     .sub-banner-btn{
         display: none;
     }
@@ -111,11 +106,9 @@
 @media (min-width: 350px)
 {
     .sub-banner-btn{
-        
         font-size: 1.3rem;
         max-width: 240px;
     }
-
 }
 
 @media(min-width: 463px)
@@ -124,22 +117,17 @@
         font-size: 1.3rem;
     }
 
-    
     .sub-banner-img{ 
-        
         max-width: 60%;
     }
     
     .sub-banner-btn{
-        
         font-size: 1.4rem;
-    }
-    
+    }   
 }
 
 
 @media (min-width: 576px) {
-    
     .sub-banner-txt > h3{
         font-size: 1.4rem;
     }
@@ -151,7 +139,6 @@
         
         font-size: 1.8rem;
     }
-
 }
 
 
@@ -182,13 +169,11 @@
             width: 5%;   
         }
     }
-
  }
 
 
 @media (min-width: 992px) 
 {     
-  
     .sub-banner-txt > p{
         font-size: 1.5rem;
     }
@@ -196,9 +181,6 @@
 
 
 @media (min-width: 1200px) { 
-  
-
-
     .sub-banner{
         padding-top: 50px;
         display: flex;
@@ -206,11 +188,9 @@
         justify-content: center;
         align-items: center;
         background: rgba(0, 0, 0, 0.8);
-
     }
 
     .sub-banner-txt{
-
         .sub-banner-btn{
             display: flex;
             justify-content: center;
@@ -224,7 +204,6 @@
     }
     
     .sub-banner-img{
-        
         max-width: 100%;
     }
     
@@ -235,19 +214,15 @@
         align-items: center;
         padding: 20px 40px;
         width: 50%;
-        
         border-left: 2px solid springgreen;
         border-radius: 30px;
     }
-
-
     
     .sub-banner-txt > h3{
         text-shadow: 2px 1px 8px white;
         text-align: center;
         margin-bottom: 20px;
-        color: white;
-        
+        color: white; 
     }
     
     .sub-banner-btn{
@@ -266,9 +241,17 @@
         position: relative;
         bottom: 2px;
     }
- }
 
-
-@media (min-width: 1400px) {  
     
-}
+    .tech-container{
+        margin-top: 0;
+        width: 80%;
+    }
+
+    .tech-container{
+        
+        img {
+            width: 4%;   
+        }
+    }
+ }
