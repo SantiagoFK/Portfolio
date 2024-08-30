@@ -60,19 +60,6 @@ $white: v.$pf-white;
     }
 }
 
-.link-container{
-    display: flex;
-    
-    padding: 1%;
-    width: 50%;
-    position: absolute;
-    top: 3%;
-
-    a{
-        width: 7%;
-        margin-left: 5px;
-    }
-}
 
 
 @media (min-width: 350px)
