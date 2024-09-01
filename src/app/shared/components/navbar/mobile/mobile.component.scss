@@ -37,7 +37,7 @@ $white: v.$pf-white;
         overflow-x: hidden;
         padding-top: 60px;
         transition: 0.3s;
-
+        
         &--cross{
             position: absolute;
             top: 3%;
@@ -57,10 +57,40 @@ $white: v.$pf-white;
             transition: 0.3s;
             text-shadow: 2px 1px 8px $white;        
         }
+
+
     }
 }
 
 
+.sidebar__links{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    position: absolute;
+    top: 3%;
+    left: 6%;
+
+    a{
+        margin-right: 5px;
+    }
+    i{
+        font-size: 1.2rem;
+    }
+}
+
+.sidebar__langs{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin: 10px auto;
+
+    button{
+        background: none;
+        color: snow;
+        border: none;
+    }
+}
 
 @media (min-width: 350px)
 {

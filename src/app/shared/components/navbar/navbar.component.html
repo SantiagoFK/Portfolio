@@ -2,7 +2,7 @@
 
     @if (this.responsiveService.width! < 1200) 
     {
-        <pf-nav-mobile></pf-nav-mobile>
+        <pf-nav-mobile (changeLanguageEvent)="onChangeLanguage($event)"></pf-nav-mobile>
     }
     @else
     {

@@ -3,12 +3,23 @@
     <pf-icon icon="burger" (clicked)="onClicked()" class="mobile-nav--burger"></pf-icon>
 
     <div class="mobile-nav__sidebar" [style.width]="this.sideBarOpen ? '60%' : '0px'">
-    
+        <div class="sidebar__links">
+            <a href="https://github.com/SantiagoFK" class="nav-link" target="_blank"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/santiago-blanco-098445212/" class="nav-link" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="mailto:santiagofb932@gmail.com" class="nav-link" target="_blank"><i class="bi bi-envelope"></i></a>
+        </div>
+
         <pf-icon icon="cross" (click)="onClicked()" class="mobile-nav__sidebar--cross"></pf-icon>
         <pf-link link="/" (click)="onClicked()">Home</pf-link>
         <pf-link link="skills" (click)="onClicked()">Skills</pf-link>
         <pf-link link="education" (click)="onClicked()">Formación</pf-link>
         <pf-link link="projects" (click)="onClicked()">Proyectos</pf-link>
         <pf-link link="about" (click)="onClicked()">Sobre Mi</pf-link>
+
+        <div class="sidebar__langs">
+            <button class="nav-link" (click)="changeLanguage('en')">En</button> 
+            <button class="nav-link" (click)="changeLanguage('es')">Es</button>
+        </div>
+        
     </div>
 </div>

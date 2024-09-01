@@ -1,4 +1,4 @@
-import { Component, ElementRef, inject, OnInit, ViewChild } from '@angular/core';
+import { Component, EventEmitter, inject, OnInit, Output } from '@angular/core';
 import { IconComponent } from '../../icon/icon.component';
 import { ParagraphComponent } from '../../paragraph/paragraph.component';
 import { LinkComponent } from '../../link/link.component';
@@ -14,6 +14,8 @@ import { NgClass } from '@angular/common';
 })
 export class MobileComponent implements OnInit
 {
+  @Output() changeLanguageEvent = new EventEmitter<string>();
+
   responsiveService : ResponsiveService = inject(ResponsiveService);
   width?: number
   heigth?: number
@@ -40,4 +42,9 @@ export class MobileComponent implements OnInit
   {
     this.sideBarOpen = !this.sideBarOpen;
   }
+
+  changeLanguage(label: string){ 
+    this.changeLanguageEvent.emit(label);
+    this.onClicked();
+  } 
 }
