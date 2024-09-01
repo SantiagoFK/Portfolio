@@ -1,11 +1,12 @@
 import { Component, inject } from '@angular/core';
 import { Router } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.scss'
 })

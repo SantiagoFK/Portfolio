@@ -1,16 +1,16 @@
 <div class="page-container">
-    <h2 class="flush-margin">Universitaria</h2>
+    <h2 class="flush-margin"> {{ "EDUCATION_PAGE__TITLE-1" | translate }}</h2>
 
     <div class="degree">
         <div class="degree__title">
             <p>
-                Tecnicatura universitaria en programación
+                {{ "EDUCATION_PAGE__DEGREE_1-TITLE" | translate }}
             </p>
         </div>
 
         <div class="degree__place">
             <i class="bi bi-geo-alt-fill"></i>
-            <p> Universidad Tecnologica Nacional FRMDP </p>
+            <p> {{ "EDUCATION_PAGE__DEGREE_1-PLACE" | translate }} </p>
         </div>
 
         <div class="degree__time">
@@ -19,29 +19,20 @@
         </div>
 
         <div class="degree__status">
-            <p> Graduado - 100%</p>
+            <p> {{ "EDUCATION_PAGE__DEGREE_1-STATUS" | translate }} - 100%</p>
         </div>
 
         <div class="degree__detail">
             <p>
-                Aprendí habilidades esenciales de
-                desarrollo y diseño de software, el uso de
-                estadística, matemática, y lógica para
-                pensar problemas. Así como el trabajo en
-                equipo en proyectos.
-                Aprendí C, Java, desarrollo web en HTML,
-                CSS, Javascript y Angular, NodeJs, MongoDB,
-                Diseño y administración de Bases de Datos
-                con MYSQL. Utilizacion de UML.
-                Asi como metodologias de desarrollo de software como teoría de SCRUM, Jira, Casos de usos y analisis basico de requisitos funcionales.
+                {{ "EDUCATION_PAGE__DEGREE_1-DETAIL" | translate }}
             </p>
             
         </div>
 
         <a href="https://drive.google.com/file/d/14px-TnQbl0qMxy1M2HaQjmHF1W49Psmr/view?usp=sharing" target="_blank">
-            <div class="degree__attachment" (click)="openDrive()">
+            <div class="degree__attachment">
                 <i class="bi bi-award-fill"></i>
-                <p>Certificado</p>
+                <p> {{ "EDUCATION_PAGE__DEGREE-BTN" | translate }}</p>
             </div>
         </a>
     </div>

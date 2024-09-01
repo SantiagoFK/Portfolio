@@ -1,0 +1,59 @@
+{
+    "SUB_BANNER__SKILLS-H": "Desarrollo de soluciones tecnológicas",
+    "SUB_BANNER__SKILLS-P": "Me considero un apasionado al desarrollo de soluciones tecnológicas que generen valor al cliente o empresa, y que sean performantes, eficientes, escalables y mantenibles. Asimismo me adapto a los requisitos del cliente y el grupo.",
+    "SUB_BANNER__SKILLS-BTN": "Ver Skills",
+
+    "SUB_BANNER__EDUCATION-H": "Resolución de Problemas",
+    "SUB_BANNER__EDUCATION-P": "La mayoría del tiempo los desarrolladores nos enfrentamos a desafios como errores o necesidad de mejoras en los productos. Mi compromiso es investigar las causas de los desafios y resolver problemas para llevar el producto al exito en la medida de mi competencia.",
+    "SUB_BANNER__EDUCATION-BTN": "Ver Formación",
+
+    "SUB_BANNER__PROJECTS-H": "Constante mejora",
+    "SUB_BANNER__PROJECTS-P": "Mi curiosidad me impulsa siempre a la investigación de nuevas tecnologías y constante mejora de conocimiento, lo cual considero de máxima importancia en este rubro tan dinámico. Asimismo creo proyectos donde poner en practica todo lo nuevo que aprendo.",
+    "SUB_BANNER__PROJECTS-BTN": "Ver Proyectos",
+
+    "DESKTOP_NAV__LINK-EDU": "Formación",
+    "DESKTOP_NAV__LINK-PRO": "Proyectos",
+    "DESKTOP_NAV__LINK-ABT": "Sobre Mí",
+
+    "SKILLS_PAGE__TITLE-1": "Generales",
+    "SKILLS_PAGE__HAB_1-1": "Programación orientada a objetos",
+    "SKILLS_PAGE__HAB_1-2": "Desarrollo full stack",
+    "SKILLS_PAGE__HAB_1-3": "Control de versiones con GIT",
+    "SKILLS_PAGE__HAB_1-4": "Inglés B2",
+
+    "SKILLS_PAGE__TITLE-2": "Desarrollo Frontend",
+    "SKILLS_PAGE__HAB_2-1": "Single Page Application (SPA)",
+    "SKILLS_PAGE__HAB_2-2": "Arquitectura monolítico",
+    "SKILLS_PAGE__HAB_2-3": "Arquitectura microfronts",
+    "SKILLS_PAGE__HAB_2-4": "Componentes reutilizables",
+    "SKILLS_PAGE__HAB_2-5": "Test unitario y e2e de componentes",
+    "SKILLS_PAGE__HAB_2-6": "Observables y RxJs",
+    "SKILLS_PAGE__HAB_2-7": "Arquitectura Redux",
+    "SKILLS_PAGE__HAB_2-8": "Método BEM",
+
+    "SKILLS_PAGE__TITLE-3": "Desarrollo Backend",
+    "SKILLS_PAGE__HAB_3-1": "Arquitectura monolítico",
+    "SKILLS_PAGE__HAB_3-2": "Arquitectura por capas",
+    "SKILLS_PAGE__HAB_3-3": "ORM: Entity Framework Core",
+    "SKILLS_PAGE__HAB_3-4": "ODM: Mongoose",
+
+    "SKILLS_PAGE__TITLE-4": "Bases de Datos",
+    "SKILLS_PAGE__HAB_4-1": "Consultas SQL",
+    "SKILLS_PAGE__HAB_4-2": "Diseño relacional",
+
+    "SKILLS_PAGE__TITLE-5": "Soft Skills",
+    "SKILLS_PAGE__HAB_5-1": "Trabajo en equipo",
+    "SKILLS_PAGE__HAB_5-2": "Orientado a resultados",
+    "SKILLS_PAGE__HAB_5-3": "Autodidacta",
+
+    "EDUCATION_PAGE__TITLE-1": "Universitaria",
+    "EDUCATION_PAGE__DEGREE_1-TITLE": "Tecnicatura universitaria en programación",
+    "EDUCATION_PAGE__DEGREE_1-PLACE": "Universidad Tecnológica Nacional FRMDP",
+    "EDUCATION_PAGE__DEGREE_1-STATUS": "Graduado",
+    "EDUCATION_PAGE__DEGREE_1-DETAIL": "Aprendí habilidades esenciales de desarrollo y diseño de software, el uso de estadística, matemática, y lógica para pensar problemas. Así como el trabajo en equipo en proyectos de desarrollo. Aprendí C, Java, desarrollo web en HTML, CSS, Javascript y Angular, NodeJs, MongoDB, Diseño y administración de Bases de Datos con MYSQL. Utilización de UML. Así como metodologías de desarrollo de software como teoría de SCRUM, Jira, Casos de usos y análisis básico de requisitos funcionales.",
+    "EDUCATION_PAGE__DEGREE-BTN": "Certificado",
+
+    "ABOUT_PAGE__TITLE": "About",
+    "ABOUT_PAGE__INTRO": "Programo desde hace el 2021, tanto en la universidad trabajando en equipo, como en proyectos personales por mi cuenta. La universidad me dio el conocimiento básico de desarrollo de software, mientras que por mi parte lo llevé más lejos con libros, cursos y práctica. En mi tiempo libre me gusta leer, aprender idiomas, escuchar música y ejercitarme."
+
+}

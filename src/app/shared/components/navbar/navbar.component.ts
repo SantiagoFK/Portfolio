@@ -1,4 +1,4 @@
-import { Component, inject, OnDestroy, OnInit } from '@angular/core';
+import { Component, EventEmitter, inject, OnDestroy, OnInit, Output } from '@angular/core';
 import { ParagraphComponent } from "../paragraph/paragraph.component";
 import { LinkComponent } from '../link/link.component';
 import { MobileComponent } from './mobile/mobile.component';
@@ -16,6 +16,7 @@ import { ResponsiveService } from '../../services/responsive.service';
 })
 export class NavbarComponent implements OnInit
 {
+  @Output() changeLanguageEvent = new EventEmitter<string>();
   responsiveService : ResponsiveService = inject(ResponsiveService);
   width?: number
   heigth?: number
@@ -28,4 +29,9 @@ export class NavbarComponent implements OnInit
       }
     })
   } 
+
+  onChangeLanguage(label: string)
+  {
+    this.changeLanguageEvent.emit(label);
+  }
 }

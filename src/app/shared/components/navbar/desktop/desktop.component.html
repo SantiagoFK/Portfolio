@@ -5,9 +5,9 @@
     <div class="nav-container">
         <pf-link link="/">Home</pf-link>
         <pf-link link="skills">Skills</pf-link>
-        <pf-link link="education">Formación</pf-link>
-        <pf-link link="projects">Proyectos</pf-link>
-        <pf-link link="about">Sobre Mi</pf-link>
+        <pf-link link="education"> {{ "DESKTOP_NAV__LINK-EDU" | translate }}</pf-link>
+        <pf-link link="projects"> {{ "DESKTOP_NAV__LINK-PRO" | translate }}</pf-link>
+        <pf-link link="about"> {{ "DESKTOP_NAV__LINK-ABT" | translate }}</pf-link>
     </div>
 
     <div class="nav-link-container">
@@ -24,8 +24,8 @@
 
     <div class="nav-link-actions">
 
-        <a href="" class="nav-link">En</a> 
-        <a href="" class="nav-link">Es</a>
+        <button class="nav-link" (click)="changeLanguage('en')">En</button> 
+        <button class="nav-link" (click)="changeLanguage('es')">Es</button>
         <!--
         <a href="" class="nav-link">AI</a>-->
         

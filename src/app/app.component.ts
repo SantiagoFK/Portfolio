@@ -1,16 +1,47 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { NavbarComponent } from "./shared/components/navbar/navbar.component";
-import { FooterComponent } from "./shared/components/footer/footer.component";
-import { AppLayoutComponent } from './shared/components/app-layout/app-layout.component';
-import { TitleComponent } from './shared/components/title/title.component';
+import { Component, inject, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
+import { LanguageOption } from './shared/interfaces/language-option';
+import { forkJoin } from 'rxjs';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, NavbarComponent, FooterComponent, AppLayoutComponent, TitleComponent],
+  standalone: false,
   templateUrl: './app.component.html'
 })
-export class AppComponent {
-  title = 'Portfolio';
+export class AppComponent implements OnInit{
+  private readonly availableLanguages = ['en', 'es'];
+  private readonly translateService = inject(TranslateService);
+  languageOptions: LanguageOption[] = [];
+
+  ngOnInit(): void {
+    this.translateService.addLangs(this.availableLanguages);
+    this.translateService.setDefaultLang('en');
+    this.buildLanguageOptions();
+  }
+  
+  private buildLanguageOptions()
+  {
+    const ENGLISH = this.translateService.get('en');
+    const SPANISH = this.translateService.get('es');
+
+    forkJoin([ENGLISH, SPANISH]).subscribe({
+      next: (response) => {
+        this.languageOptions = [
+          {
+            value: this.availableLanguages[0],
+            label: response[0].toUpperCase()
+          },
+          {
+            value: this.availableLanguages[1],
+            label: response[1].toUpperCase()
+          }
+        ]
+      }
+    })
+  }
+
+  public changeLanguage(label: string)
+  {
+    this.translateService.use(label);
+  }
 }

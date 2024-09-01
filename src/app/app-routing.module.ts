@@ -1,7 +1,8 @@
-import { Routes } from '@angular/router';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 import { HomePageComponent } from './portfolio/pages/home-page/home-page.component';
 
-export const routes: Routes = [
+const routes: Routes = [
     { path: '', pathMatch: 'full', component: HomePageComponent, title: 'Portfolio | Home' },
     { 
         path: 'skills',   
@@ -34,3 +35,9 @@ export const routes: Routes = [
         title: 'Oops... an Error!'
     }
 ];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes, { scrollPositionRestoration: "enabled" })],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }
