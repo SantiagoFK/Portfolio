@@ -12,9 +12,9 @@
         <pf-icon icon="cross" (click)="onClicked()" class="mobile-nav__sidebar--cross"></pf-icon>
         <pf-link link="/" (click)="onClicked()">Home</pf-link>
         <pf-link link="skills" (click)="onClicked()">Skills</pf-link>
-        <pf-link link="education" (click)="onClicked()">Formación</pf-link>
-        <pf-link link="projects" (click)="onClicked()">Proyectos</pf-link>
-        <pf-link link="about" (click)="onClicked()">Sobre Mi</pf-link>
+        <pf-link link="education" (click)="onClicked()">{{ "MOBILE_NAV__LINK-EDU" | translate }}</pf-link>
+        <pf-link link="projects" (click)="onClicked()">{{ "MOBILE_NAV__LINK-PRO" | translate }}</pf-link>
+        <pf-link link="about" (click)="onClicked()">{{ "MOBILE_NAV__LINK-ABT" | translate }}</pf-link>
 
         <div class="sidebar__langs">
             <button class="nav-link" (click)="changeLanguage('en')">En</button> 

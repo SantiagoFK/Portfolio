@@ -4,11 +4,12 @@ import { ParagraphComponent } from '../../paragraph/paragraph.component';
 import { LinkComponent } from '../../link/link.component';
 import { ResponsiveService } from '../../../services/responsive.service';
 import { NgClass } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'pf-nav-mobile',
   standalone: true,
-  imports: [IconComponent, ParagraphComponent, LinkComponent, NgClass],
+  imports: [IconComponent, ParagraphComponent, LinkComponent, NgClass, TranslateModule],
   templateUrl: './mobile.component.html',
   styleUrl: './mobile.component.scss'
 })

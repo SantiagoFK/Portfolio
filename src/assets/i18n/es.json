@@ -15,6 +15,10 @@
     "DESKTOP_NAV__LINK-PRO": "Proyectos",
     "DESKTOP_NAV__LINK-ABT": "Sobre Mí",
 
+    "MOBILE_NAV__LINK-EDU": "Formación",
+    "MOBILE_NAV__LINK-PRO": "Proyectos",
+    "MOBILE_NAV__LINK-ABT": "Sobre Mí",
+
     "SKILLS_PAGE__TITLE-1": "Generales",
     "SKILLS_PAGE__HAB_1-1": "Programación orientada a objetos",
     "SKILLS_PAGE__HAB_1-2": "Desarrollo full stack",
